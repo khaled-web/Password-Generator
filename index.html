@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Password Generator</title>
+ <!-- Css-style-Link -->
+ <link rel="stylesheet" href="./Css/style.css">
+ <!-- end of Css-style-Link -->
+
+ <!-- favicon -->
+ <link rel="shortcut icon" href="./Css/favicon04.ico" type="image/x-icon" />
+ <!-- end of favicon -->
+
+ <!-- font-awesome -->
+ <link rel="stylesheet" href="./Css/fontawesome-free-5.12.1-web/css/all.min.css">
+ <!-- end of font-awesome -->
+</head>
+<body>
+<!-- container-->
+ <div class="container">
+  <h2>password generator</h2>
+  <!-- result-container-->
+  <div class="result-container">
+   <span class="result" id="result">
+    <button class="btn" id="clipboard">
+     <i class="far fa-clipboard"></i>
+    </button>
+   </span>
+  </div>
+  <!-- end of result-container-->
+
+  <!-- settings-->
+  <div class="settings">
+   <!-- setting-->
+   <div class="setting">
+    <label>password Length</label>
+    <input type="number" id="length" min="4" max="20" value="20">
+   </div>
+   <!-- end of setting-->
+
+   <!-- setting-->
+   <div class="setting">
+    <label>Include Uppercase letters</label>
+    <input type="checkbox" id="uppercase" checked>
+   </div>
+   <!-- end of setting-->
+
+   <!-- setting-->
+   <div class="setting">
+    <label>Include Lowercase letters</label>
+    <input type="checkbox" id="lowercase" checked>
+   </div>
+   <!-- end of setting-->
+
+   <!-- setting-->
+   <div class="setting">
+    <label>Include numbers</label>
+    <input type="checkbox" id="numbers" checked>
+   </div>
+   <!-- end of setting-->
+
+   <!-- setting-->
+   <div class="setting">
+    <label>Include symbols</label>
+    <input type="checkbox" id="symbols" checked>
+   </div>
+   <!-- end of setting-->
+
+  </div>
+  <!-- end of settings-->
+  <button class="btn btn-large" id="generate">
+   generate password
+  </button>
+ </div>
+<!-- end of container-->
+
+ <!-- JS-Link -->
+ <script src="./Js/index.js"></script>
+ <!-- end of JS-Link --> 
+</body>
+</html>
